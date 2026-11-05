@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Administration</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<main class="card wide">
+    <h1>Espace administration</h1>
+    <p class="muted">Cette page est réservée aux utilisateurs ayant le rôle ADMIN.</p>
+
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nom d'utilisateur</th>
+            <th>Actif</th>
+            <th>Rôles</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="user : ${users}">
+            <td th:text="${user.id}">1</td>
+            <td th:text="${user.username}">utilisateur</td>
+            <td th:text="${user.active} ? 'Oui' : 'Non'">Oui</td>
+            <td>
+                <span class="badge" th:each="role : ${user.roles}" th:text="${role.name}">ROLE_USER</span>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <p class="muted"><a th:href="@{/home}">Retour à l'accueil</a></p>
+</main>
+</body>
+</html>

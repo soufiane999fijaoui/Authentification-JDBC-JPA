@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Authentification JPA</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<main class="card">
+    <h1>Authentification JDBC / JPA</h1>
+    <p class="muted">Les utilisateurs et leurs rôles sont stockés dans MySQL et les mots de passe sont hachés avec BCrypt.</p>
+    <div class="actions">
+        <a class="button" th:href="@{/login}">Se connecter</a>
+        <a class="button secondary" th:href="@{/register}">Créer un compte</a>
+    </div>
+</main>
+</body>
+</html>

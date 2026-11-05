@@ -1,0 +1,13 @@
+ma\fstg\security\services\CustomUserDetailsService.class
+ma\fstg\security\config\DatabaseInitializer.class
+ma\fstg\security\repositories\RoleRepository.class
+ma\fstg\security\repositories\UserRepository.class
+ma\fstg\security\web\UserController.class
+ma\fstg\security\web\AuthController.class
+ma\fstg\security\web\HomeController.class
+ma\fstg\security\entities\User.class
+ma\fstg\security\web\AdminController.class
+ma\fstg\security\SpringSecurityJpaApplication.class
+ma\fstg\security\entities\Role.class
+ma\fstg\security\config\SecurityConfig.class
+ma\fstg\security\services\UserService.class
